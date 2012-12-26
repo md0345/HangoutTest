@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Your App Name">
+    <Require feature="rpc"/>
+    <Require feature="views"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+
+      <!-- PRODUCCION
+      <script src="//talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
+      -->
+      <!-- DESARROLLO -->
+      <script src="//hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
+
+      
+
+      <!-- application code -->
+      <div class="principal">
+      <div class="JuegoAhorcado">
+        <div>
+          <h1>Instrucciones:</h1>
+          <h3>El ahorcado es un juego cuyo objetivo es adivinar una palabra o frase.</h3>
+          <h3>El jugador deber&aacute; ir diciendo letras que podr&iacute;an estar en la palabra.</h3>
+          <h3>Si acierta, se escriben todas las letras coincidentes. Si la letra no est&aacute;, se le a&ntilde;ade un elemento al cuerpo del mu&ntilde;eco.</h3>
+          <h3>Se gana el juego si se completa la frase, y se pierde si se completa el cuerpo antes de terminar la frase.</h3>
+        </div>
+        <h5>Jugar!</h5>
+        <div class="ContenedorJuego">
+          <div id="Pregunta"></div>
+          <div class="ColumnaUno">
+            <div id="ContenedorAbecedario" class="ContenedorAbecedario">
+              <ul class="Azul" id="letras"></ul>
+            </div>
+            <div class="Palabra" id="Palabra">
+              <span><input type='text' name='l0' id='l0'></span>
+              <span><input type='text' name='l1' id='l1'></span>
+              <span><input type='text' name='l2' id='l2'></span>
+              <span><input type='text' name='l3' id='l3'></span>
+            </div>
+          </div>
+          <div class="ColumnaDos">
+            <div id="monito" class="ContenedorAhorcado">
+              <div id="cabeza" class="Cabeza_" style="display:none;"></div>
+              <div id="brazoizquierdo" class="BrazoIzquierdo_" style="display:none;"></div>
+              <div id="tronco" class="Tronco_" style="display:none;"></div>
+              <div id="brazoderecho" class="BrazoDerecho_" style="display:none;"></div>
+              <div id="pieizquierdo" class="PieIzquierdo_" style="display:none;"></div>
+              <div id="piederecho" class="PieDerecho_" style="display:none;"></div>
+            </div>
+          </div>
+        </div>
+        <div id="resultado" class="Resultado" style="display:none;"></div>  
+        <input type="hidden" id="contador" value="0">
+        <input type="hidden" id="palabra" value="0">
+      </div>
+      </div>
+    ]]>
+  </Content>
+</Module>
