@@ -13,7 +13,9 @@
       <!-- DESARROLLO -->
       <script src="//hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.2"></script>
 
-      
+      <link rel="stylesheet" type="text/css" href="http://192.168.0.103/Hangout/Ahorcado/css/estilos.css" />  
+      <script type="text/javascript" src="http://192.168.0.103/Hangout/Ahorcado/js/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="http://192.168.0.103/Hangout/Ahorcado/js/funciones.js"></script>
 
       <!-- application code -->
       <div class="principal">
