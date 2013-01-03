@@ -1,0 +1,241 @@
+@import url(http://fonts.googleapis.com/css?family=Paprika);
+.principal{
+	margin: 0 auto;
+	width: 700px;
+}
+.ahorcado{
+	border-bottom: 1px solid #000;
+}
+.contenedor_ahorcado{
+	background-image: url("../imagenes/baseahorcado.png");
+	height: 200px;
+	width: 180px;
+}
+.monito{
+	margin-top: 20px;
+	margin-left: 80px;
+}
+.brazoizquierdo{
+	display: inline-block;
+	float: left;
+	width: 28px;
+}
+.tronco{
+	display: inline-block;
+	float: left;
+	width: 4px;
+}
+.brazoderecho{
+	display: inline-block;
+	float: left;
+	width: 28px;
+}
+.pieizquierdo{
+	clear: both;
+	display: inline-block;;
+	float: left;
+	width: 26px;
+}
+.piederecho{
+	display: inline-block;
+	float: left;
+	width: 24px;
+}
+h1 {
+	color: #0055A4;
+	font: 20px Helvetica;
+}
+h3{
+	color: #7F7F7F;
+	font: 15px Sans-serif;
+}
+h5, .Resultado {
+	color: #E75640;
+    font: 38px 'Paprika';
+	margin: 40px 0;
+    text-align: center;
+}
+.Resultado {
+	font-size: 44px;
+}
+.JuegoAhorcado {
+	background: none repeat scroll 0 0 #F5F5F5;
+	border: 1px solid #DDD;
+	padding: 10px;
+}
+.ContenedorJuego {
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CCCCCC;
+	margin: 20px 0;
+	padding: 20px 10px;
+	overflow: hidden;
+}
+.ColumnaUno {
+	display: inline-block;
+	float: left;
+	width: 400px;
+}
+.ColumnaDos {
+	display: inline-block;
+	float: left;
+	width: 250px;	
+}
+.ContenedorAbecedario{
+	margin: 20px auto;
+    padding: 0;
+    width: 310px;
+}
+.ContenedorAbecedario ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.ContenedorAbecedario li{
+	color: #000;
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.ContenedorAbecedario > ul > li > a{
+	border-radius: 40px 40px 40px 40px;
+	-moz-border-radius: 40px 40px 40px 40px;
+	-webkit-border-radius: 40px 40px 40px 40px;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.7);
+    background: -moz-linear-gradient(center top , #555 0%, #000 100%) repeat scroll 0 0 transparent;
+    border: none;
+    color: #CCC;
+	display: inline-block;
+	font: normal 15px Arial;
+	height: 25px;
+	line-height: 100%;
+	padding: 6px 0 0;
+	text-align: center;
+    text-decoration: none;
+	vertical-align: middle;	
+	width: 30px;
+}
+.ContenedorAbecedario > ul > li > a:hover{
+	background: #000;
+	cursor: pointer;
+}
+.ContenedorAbecedario > ul > li > a.Usado{
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.7) inset, 0 -1px 0 rgba(255, 255, 255, 0.3) inset;
+	background: none repeat scroll 0 0 #333;
+	color: #666;
+	cursor: normal !important;
+	text-decoration: none;
+}
+.ContenedorAbecedario > ul.Azul > li > a{
+	border-radius: 40px 40px 40px 40px;
+	-moz-border-radius: 40px 40px 40px 40px;
+	-webkit-border-radius: 40px 40px 40px 40px;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.7);
+    background: -moz-linear-gradient(center top , #2CA8DF 0%, #0055A4 100%) repeat scroll 0 0 transparent;
+    border: none;
+    color: #CCC;
+	display: inline-block;
+	font: normal 15px Arial;
+	height: 25px;
+	line-height: 100%;
+	padding: 6px 0 0;
+	text-align: center;
+    text-decoration: none;
+	vertical-align: middle;	
+	width: 30px;
+}
+.ContenedorAbecedario > ul.Azul > li > a:hover{
+	background: #0053A0;
+	cursor: pointer;
+}
+.ContenedorAbecedario > ul.Azul > li > a.Usado{
+	-moz-box-shadow: 0 1px 0 rgba(105, 105, 105, 0.7) inset, 0 -1px 0 rgba(255, 255, 255, 0.3) inset;
+	background: none repeat scroll 0 0 #5F96B4;
+	color: #CCC;
+	cursor: normal !important;
+	text-decoration: none;
+}
+.Palabra {
+    font-family: Arial;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+}
+.Palabra span{
+	border-bottom: 2px solid #454545;
+	display: inline-block;
+	margin: 0 15px 0 0;
+    width: 20px;
+}
+.Palabra input{
+	background-color: transparent;
+    border: medium none;
+    color: #2CA8DF;
+    font-size: 25px;
+    text-align: center;
+    width: 15px;
+}
+/* Área ahorcado*/
+.ContenedorAhorcado {
+	background: url("../imagenes/Base.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 315px;
+	margin: 10px auto;
+	position: relative;
+	width: 200px;
+}
+.Cabeza_{
+	background: url("../imagenes/Cabeza.png") no-repeat scroll 0 0 transparent;
+	height: 60px;
+	left: 110px;
+	position: absolute;
+	top: 60px;
+	width: 55px;	
+}
+.Tronco_{
+	background: url("../imagenes/Tronco.png") no-repeat scroll 0 0 transparent;
+	height: 80px;
+	left: 120px;
+	position: absolute;
+	top: 119px;
+	width: 50px;
+	z-index: 1;
+}
+.BrazoDerecho_{
+    background: url("../imagenes/BrazoDerecho.png") no-repeat scroll 0 0 transparent;
+	height: 50px;
+	left: 90px;
+	position: absolute;
+	top: 125px;
+	width: 50px;
+}
+.BrazoIzquierdo_{
+    background: url("../imagenes/BrazoIzquierdo.png") no-repeat scroll 0 0 transparent;
+	height: 50px;
+	left: 152px;
+    position: absolute;
+    top: 115px;
+	width: 50px;
+}
+.PieDerecho_{
+    background: url("../imagenes/PieDerecho.png") no-repeat scroll 0 0 transparent;
+	height: 65px;
+    left: 120px;
+    position: absolute;
+    top: 193px;
+    width: 50px;
+}
+.PieIzquierdo_{
+    background: url("../imagenes/PieIzquierdo.png") no-repeat scroll 0 0 transparent;
+	height: 65px;
+    left: 150px;
+    position: absolute;
+    top: 193px;
+    width: 50px;
+}
